@@ -37,3 +37,21 @@ Genuine human feedback and a corresponding implemented improvement are not yet d
 
 ## Limitations
 Synthetic fixtures; deterministic scheduling heuristic rather than a global optimum; fixed stress scenarios rather than probabilities; INR and working-day offsets only; one disruption per run; browser-local plans rather than team collaboration; declared external quotes and capacity; no booking or client communication. Live-model accuracy and real customer impact have not been evaluated.
+
+## Compact pitch (for a short field)
+
+DeliveryGuard helps small agencies protect fixed-fee client delivery when staffing, budgets or deadlines change. It compares waiting with allowed recovery patches, verifies scope and financial constraints, and asks a human to confirm external facts before applying a plan. In a synthetic staffing case it preserves all scope and improves modeled contribution by ₹12,000. Public demo: local rules; optional AI is mock-tested. Event card gaps are disclosed below.
+
+## Build evidence links
+
+Judge walkthrough and claim-to-source map: https://github.com/gowtham66867/deliveryguard-grevix/blob/main/docs/judge-guide.md
+
+Reproducible verification packet: https://github.com/gowtham66867/deliveryguard-grevix/blob/main/docs/submission-verification.json
+
+Passing CI history: https://github.com/gowtham66867/deliveryguard-grevix/actions
+
+Build decisions: https://github.com/gowtham66867/deliveryguard-grevix/blob/main/docs/decision-log.md
+
+## What changed before Final Forge
+
+Added a judge guide that maps each claim to source and tests, a one-command submission-evidence verifier, a break-even analysis for backup spend, and a proposed pilot with explicit acceptance and stop criteria. Corrected stale documentation counts and Cloud Run wording. These are builder-directed improvements, not improvements attributed to genuine external human feedback. No new live-AI, customer or card-completion claim is introduced.

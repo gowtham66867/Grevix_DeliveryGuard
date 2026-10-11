@@ -20,7 +20,7 @@ Contribution is revenue minus delivery cost minus declared lateness cost. It is 
 
 ## AI limits
 
-The hosted static demo uses local rules. The optional OpenAI interpreter requires the local Node server and a server-side API key. It is contract-tested with mocks, not evaluated against a live model. Model access, latency, and quality depend on the configured account and model.
+The public Cloud Run demo uses local rules with no provider key. The optional OpenAI interpreter requires the Node server and a server-side API key. It is contract-tested with mocks, not evaluated against a live model. Model access, latency, and quality depend on the configured account and model.
 
 Strict structured output limits shape, not truth. Evidence validation requires an actual excerpt and explicit number; disagreement with recognized local extraction is rejected. Other semantically wrong interpretations may remain, so the UI displays the change for review before approval.
 
@@ -50,4 +50,4 @@ The IP rate limiter is in-memory and resets with the server. It is not tenant-aw
 
 Before a real deployment with client data: add authentication, tenant isolation, encrypted durable storage, a cryptographic append-only audit mechanism, consented retention policies, calendar support, live-resource integrations, per-user budgets, model evaluations, and incident monitoring. Conduct a pilot and security review before connecting vendor or communication actions.
 
-The local server binds to `127.0.0.1`. It should remain local until those controls are implemented. The static public demo contains synthetic fixtures and does not expose a provider key.
+The server binds to `127.0.0.1` locally and to the Cloud Run interface when `K_SERVICE` is set. The public deployment serves synthetic fixtures and local interpretation; no provider key is configured. Adding a public paid-provider endpoint requires the production controls described above.

@@ -40,3 +40,23 @@ For a pilot, compare decision time and plan-error detection against the team’s
 The prototype targets a single fixed-fee engagement, not staffing optimization across an entire agency. Multi-project contention, real calendars, integrations, uncertainty calibration, and role-based approval would be prerequisites for broader adoption.
 
 A paid product is a future hypothesis. No validated pricing, customer demand, or revenue claim is included in this submission.
+
+## When the recovery is economically worthwhile
+
+The modeled backup adds ₹6,000 relative to waiting and avoids six days of lateness. Holding delivery estimates and scope constant, the cost-only break-even lateness charge is ₹1,000 per day (₹6,000 ÷ 6). At the fixture's ₹3,000 per day, the modeled contribution benefit is ₹12,000. At ₹0 per day, waiting would have ₹6,000 more contribution; the contractual delivery constraint can still rule it out. This illustrates why hard commitments and economics must be considered together.
+
+The quote itself is not spare spending capacity: the selected plan has just ₹1,000 left in its ₹70,000 budget. A higher quote or worse estimate requires re-evaluation. The fixed stress cases expose this sensitivity without inventing a probability of success. These calculations assume all extra spend is incremental; the prototype does not model paid-to-date or sunk costs.
+
+## Pilot acceptance plan
+
+This is a proposed validation design, not completed research or a statistical efficacy claim.
+
+| Question | Method | Proposed acceptance criterion |
+| --- | --- | --- |
+| Can a lead understand the decision? | Five consenting agency leads use the synthetic staffing case without coaching | At least four identify the recommended patch, incremental cost and unresolved external confirmation within two minutes |
+| Does it help their own workflow? | Each lead brings one anonymized disruption and explains their usual decision process first | Record time, corrections and overrides for both methods; report each pair rather than extrapolating savings |
+| Are constraints preserved? | Independently review each exported decision against its entered contract, dependency and resource assumptions | No approved decision silently removes required scope or ignores a declared hard limit |
+| Does it communicate uncertainty? | Ask the lead which stress cases fail and what needs confirmation | At least four distinguish nominal feasibility from real-world certainty |
+| Is there a business worth pursuing? | Ask about frequency, fallback quote availability and willingness to run a pilot | Continue only if recurring pain and usable input data are demonstrated; do not infer demand from demo approval |
+
+Stop the pilot if a decision violates declared hard constraints or a reviewer interprets synthetic estimates as verified vendor availability. Preserve the failure and fix it before expanding access. Collect only consented, anonymized evidence. Human feedback received in a future pilot can support a product improvement; it is not retroactive proof that this event's feedback card was completed.

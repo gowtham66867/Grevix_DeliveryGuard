@@ -24,6 +24,6 @@ Approve, inspect the changed cost and finish, and undo. Show the exported decisi
 
 Reset the fixture, select No feasible recovery, and run. Explain why the system refuses to invent a solution below the required-scope cost. Show rejected options and their failing constraints.
 
-Open Evaluation harness. Show 27 recorded fixture cases and 150 generated DAG scenarios; mention 78 automated tests in the repository. Provider responses are mocked, and live-model accuracy has not been benchmarked.
+Open Evaluation harness. Show 27 recorded fixture cases and 150 generated DAG scenarios; mention 87 automated tests in the repository. Provider responses are mocked, and live-model accuracy has not been benchmarked.
 
 Close with the product boundary: this is a narrow delivery-recovery copilot for fixed-fee projects. Production work includes team permissions, real calendars, integrations, and a validated customer pilot.

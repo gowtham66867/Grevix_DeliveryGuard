@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-11T18:07:21.709Z",
+  "scope": "Fresh local engineering verification plus previously recorded Cloud Run browser evidence. No live-model benchmark or customer validation.",
+  "unitTests": {
+    "passed": 87,
+    "total": 87
+  },
+  "evaluations": {
+    "passed": 27,
+    "total": 27,
+    "generatedGraphs": 150
+  },
+  "browserEvidence": {
+    "passed": 12,
+    "total": 12,
+    "recordedAt": "2026-10-11T16:52:48.019Z",
+    "freshRun": false
+  },
+  "staffingDecision": {
+    "waitingCost": 63000,
+    "waitingPenalty": 18000,
+    "waitingContribution": 39000,
+    "recoveryCost": 69000,
+    "recoveryContribution": 51000,
+    "contributionGain": 12000,
+    "budgetBuffer": 1000,
+    "deadlineBuffer": 2,
+    "requiredScopePreserved": true,
+    "status": "provisional",
+    "confirmations": [
+      "Confirm backup engineer capacity and ₹20,000 quote"
+    ],
+    "stress": [
+      {
+        "id": "cost",
+        "passed": false,
+        "cost": 75900,
+        "finish": 14,
+        "violations": [
+          "BUDGET"
+        ]
+      },
+      {
+        "id": "duration",
+        "passed": false,
+        "cost": 69000,
+        "finish": 20,
+        "violations": [
+          "DEADLINE"
+        ]
+      },
+      {
+        "id": "capacity",
+        "passed": true,
+        "cost": 69000,
+        "finish": 16,
+        "violations": []
+      },
+      {
+        "id": "combined",
+        "passed": false,
+        "cost": 75900,
+        "finish": 22,
+        "violations": [
+          "BUDGET",
+          "DEADLINE"
+        ]
+      }
+    ]
+  },
+  "releaseVerdict": "Engineering checks pass. Event compliance remains incomplete.",
+  "unresolved": [
+    "Assigned PulseGuard Edge Card 1 not implemented in DeliveryGuard; organizer acceptance of the project switch is unverified.",
+    "Genuine human feedback and corresponding Card 2 improvement evidence pending.",
+    "Final Forge receipt pending."
+  ],
+  "artifacts": [
+    {
+      "path": "docs/submission-answers.md",
+      "bytes": 5556,
+      "sha256": "d76e896fa84895906b1a95da4fa73610d6e17fca1657cb8e3a4920a8f1eacee3"
+    },
+    {
+      "path": "docs/business-case.md",
+      "bytes": 6228,
+      "sha256": "a4b47b39c701193f8f4999adf1f9247fc7cd1ffdb6c5b304c1d886146eb38398"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 5987,
+      "sha256": "290d35a97ab20096209b419d32c797ebd69535098caf04bd9077af5ac120de88"
+    },
+    {
+      "path": "docs/test-cases.md",
+      "bytes": 6059,
+      "sha256": "200cda71e85c5236e0809e742e4cd44829cebe5194f0054d5370f0372c202584"
+    },
+    {
+      "path": "docs/limits.md",
+      "bytes": 4592,
+      "sha256": "b7fb926083dc076279cefc2bfdc72db8693830654f0ea962cd93c05cb4592a74"
+    },
+    {
+      "path": "docs/demo-script.md",
+      "bytes": 2316,
+      "sha256": "7de384cb1cb3cc3b119c7b89b6688d8268ce895291eb8f68ad46119c83b4f134"
+    },
+    {
+      "path": "docs/decision-log.md",
+      "bytes": 2739,
+      "sha256": "1766ef5abe9bc8d148da831f02c7bf829e20ec9c3f638272e211a94e2160942c"
+    },
+    {
+      "path": "docs/judge-guide.md",
+      "bytes": 4943,
+      "sha256": "609bc88b91f5d9a5a9eaa0f73115c50c5777c5dc83cfbd0bacef90b51024807d"
+    },
+    {
+      "path": "docs/live-browser-proof.json",
+      "bytes": 1404,
+      "sha256": "5a6e506ebef552562a766a2a15318164f08d1b845f7dbb2c75ae910f2481a12a"
+    },
+    {
+      "path": "evals/report.json",
+      "bytes": 4968,
+      "sha256": "f65d1ee4336d7d2c12370f51d422ef6ff54c674be476c40c77ba7dc912162af2"
+    },
+    {
+      "path": "feedback/README.md",
+      "bytes": 1534,
+      "sha256": "c1b245668cda69f6726f150a8c7b55f8ef4cf166aa1e843a75eb39f58dff6d27"
+    }
+  ],
+  "integrityNote": "SHA-256 values let reviewers compare these exact files. This is not a signed attestation or an immutable audit log."
+}

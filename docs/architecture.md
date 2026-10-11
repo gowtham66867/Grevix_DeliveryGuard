@@ -66,6 +66,6 @@ User input and model output are untrusted. Known unsafe phrases are blocked befo
 
 Browser storage is editable and readable by local scripts on the origin. It is not a secure ledger. The revision token is a canonicalized FNV checksum for accidental stale-state detection; it does not provide collision-resistant authentication. Approval is a local interaction, not a legal signature.
 
-The Node server binds to loopback, rejects cross-origin interpretation requests, bounds body size, rate-limits calls, and emits security headers. Do not expose it publicly with an API key without authentication, HTTPS, tenant isolation, and a deployment security review.
+The Node server binds to loopback locally and the Cloud Run interface under `K_SERVICE`, rejects foreign-origin interpretation requests, bounds body size, rate-limits calls, and emits security headers. Do not expose it publicly with an API key without authentication, HTTPS, tenant isolation, and a deployment security review.
 
 The provider request follows [official OpenAI Structured Outputs guidance](https://developers.openai.com/api/docs/guides/structured-outputs). No key is embedded in the static app or submitted archive.

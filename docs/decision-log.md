@@ -17,3 +17,7 @@ This log records observed development decisions on 11 October 2026. It does not 
 | Leave human-feedback requirement pending | Engineering checks are not genuine external human feedback | Feedback status remains incomplete |
 
 AI assisted implementation and verification. No customer savings, clinical outcome, human response or event-form completion is fabricated. Decisions still requiring the builder or organizer are listed in `submission.md`.
+
+## Final Forge preparation
+
+After the owner's request to keep improving before submission, added a claim-to-evidence judge guide and a fresh verification packet. The verifier derives the test count from an actual run, recalculates staffing economics, and distinguishes prior browser proof from freshly executed local checks. Added the ₹1,000/day cost-only break-even calculation and a proposed pilot with measurable acceptance criteria. Corrected the demo script's stale test count and deployment descriptions. This work is not represented as external reviewer feedback.

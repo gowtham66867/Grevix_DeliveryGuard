@@ -1,1 +1,17 @@
-{"name":"deliveryguard","version":"1.0.0","private":true,"type":"module","engines":{"node":">=22"},"scripts":{"start":"node server.mjs","test":"node --test tests/*.test.mjs","eval":"node evals/run.mjs","check":"npm test && npm run eval","build":"node scripts/build.mjs"}}
+{
+  "name": "deliveryguard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "eval": "node evals/run.mjs",
+    "check": "npm test && npm run eval",
+    "build": "node scripts/build.mjs",
+    "submission:verify": "node scripts/verify-submission.mjs"
+  }
+}

@@ -53,7 +53,7 @@ cp .env.example .env
 node --env-file=.env server.mjs
 ```
 
-The UI enables live interpretation only when the local server reports it as configured. Opting in sends the brief and minimal budget/deadline/resource context to OpenAI. Costs and complete task records are not sent to the model. Requests use a strict JSON schema, `store:false`, a 15-second timeout, and a 700-output-token bound. Schema compliance alone does not prove semantic accuracy; evidence and plan parameters are validated before scheduling. The hosted static demo stays in local-rules mode.
+The UI enables live interpretation only when the local server reports it as configured. Opting in sends the brief and minimal budget/deadline/resource context to OpenAI. Costs and complete task records are not sent to the model. Requests use a strict JSON schema, `store:false`, a 15-second timeout, and a 700-output-token bound. Schema compliance alone does not prove semantic accuracy; evidence and plan parameters are validated before scheduling. The public Cloud Run demo stays in local-rules mode with no configured provider key.
 
 ## Decision assurance
 
@@ -62,6 +62,8 @@ Every selected recovery includes four deterministic stress cases: costs +10%, ea
 The evaluation view can also run a **12-check live proof suite** in the browser, including independent schedule verification, impossible recovery, adversarial input, external verification and stale approval. Download its generated evidence. This is separate from the recorded 27-case evaluation and does not evaluate a live model.
 
 ## Review the evidence
+
+Start with the [judge guide](docs/judge-guide.md), then inspect the [submission verification packet](docs/submission-verification.json). Reproduce its engineering evidence with `npm run submission:verify`; the recorded browser checks retain their original timestamp.
 
 | Artifact | Purpose |
 | --- | --- |
