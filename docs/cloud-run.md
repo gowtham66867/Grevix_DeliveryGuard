@@ -24,7 +24,7 @@ The local suite passed 87 tests, 27 evaluation cases, and 150 generated graphs; 
 ```sh
 npm run check
 npm run build
-gcloud run deploy deliveryguard --source=. --project=billing-dashboard-505116 --region=asia-south1 --no-invoker-iam-check --min-instances=0 --max-instances=1 --memory=256Mi --cpu=1 --concurrency=40 --timeout=30 --port=8080 --quiet
+gcloud run deploy deliveryguard --source=. --project=billing-dashboard-505116 --region=asia-south1 --no-invoker-iam-check --min-instances=0 --max=1 --max-instances=1 --memory=256Mi --cpu=1 --concurrency=40 --timeout=30 --port=8080 --quiet
 ```
 
 `.gcloudignore` excludes environment files and local evidence from upload. `.dockerignore` restricts the image to runtime assets. The server binds to all interfaces under Cloud Run's `K_SERVICE` and uses its injected `PORT`; local runs bind to loopback.
