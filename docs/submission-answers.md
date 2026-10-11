@@ -17,6 +17,9 @@ The synthetic Northstar engagement has ₹1,20,000 revenue. A frontend staffing 
 ## Demo
 https://deliveryguard-412542191970.asia-south1.run.app/
 
+## Public source repository
+https://github.com/gowtham66867/deliveryguard-grevix
+
 ## Technology and AI tools
 JavaScript ES modules, Node.js, HTML/CSS/SVG, browser local storage, Docker and Google Cloud Run. Codex assisted with implementation, documentation and verification. The deployed demo uses a transparent local-rules interpreter. An optional server-side OpenAI Responses interpreter uses strict structured output, evidence grounding and bounded calls; it is mock-tested and is not configured in the public demo.
 

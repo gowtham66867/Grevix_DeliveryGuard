@@ -4,7 +4,7 @@ DeliveryGuard has a working app, reproducible harness, business case, architectu
 
 ## Required event work
 
-The GREVIX Unstop WhatsApp announcements on 11 October 2026 state that Phase 3 and Phase 4 forms are mandatory. Missing Phase 1 or 2 forms is permitted. Aaryan’s 8:08 PM message gives the Phase 4 final-form window as 12 AM–2 AM on 12 October. Check the time zone and current window in Unstop before submission.
+The GREVIX Unstop WhatsApp announcements on 11 October 2026 state that Phase 3 and Phase 4 forms are mandatory. Missing Phase 1 or 2 forms is permitted. Aaryan’s 8:08 PM message gives the Phase 4 final-form window as 12 AM–2 AM on 12 October. The Unstop event page was checked and confirms the window is 12:00–2:00 AM IST on 12 October 2026. The authenticated form is still pending sign-in.
 
 Challenge Card 2 requires sharing the project, collecting genuine human feedback, implementing at least one change from that feedback, and committing discussion and response screenshots plus a brief explanation under `/feedback` or the README.
 
@@ -21,7 +21,7 @@ Challenge Card 2 requires sharing the project, collecting genuine human feedback
 - [ ] Phase 3 form completed.
 - [ ] Phase 4 form completed in its required window.
 - [x] Public demo verified on Cloud Run.
-- [ ] Judge-accessible source URL verified.
+- [x] Public source repository created and verified: https://github.com/gowtham66867/deliveryguard-grevix
 - [ ] Any required video or form-specific attachment supplied.
 
 ## Submission copy
