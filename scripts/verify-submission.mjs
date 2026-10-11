@@ -53,7 +53,7 @@ const report = {
   browserEvidence:{passed:browser.passed,total:browser.total,recordedAt:browser.generatedAt,freshRun:false},
   staffingDecision:{...brief.economics,requiredScopePreserved:brief.scope.requiredPreserved,status:winner.status,confirmations:brief.confirmations,stress:brief.stress.map(s=>({id:s.id,passed:s.passed,cost:s.metrics.cost,finish:s.metrics.finish,violations:s.violations.map(v=>v.code)}))},
   releaseVerdict:'Engineering checks pass. Event compliance remains incomplete.',
-  unresolved:['Assigned PulseGuard Edge Card 1 not implemented in DeliveryGuard; organizer acceptance of the project switch is unverified.','Genuine human feedback and corresponding Card 2 improvement evidence pending.','Final Forge receipt pending.'],
+  unresolved:['Assigned PulseGuard Edge Card 1 not implemented in DeliveryGuard; organizer acceptance of the project switch is unverified.','Genuine human feedback and corresponding Card 2 improvement evidence pending.'],
   artifacts,
   integrityNote:'SHA-256 values let reviewers compare these exact files. This is not a signed attestation or an immutable audit log.'
 };

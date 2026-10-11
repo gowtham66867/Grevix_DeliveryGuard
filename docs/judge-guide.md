@@ -2,7 +2,7 @@
 
 **Decision:** recover a fixed-fee client engagement after a staffing disruption without silently sacrificing scope or contribution.
 
-[Open the public demo](https://deliveryguard-412542191970.asia-south1.run.app/) · [Source](https://github.com/gowtham66867/deliveryguard-grevix) · [CI runs](https://github.com/gowtham66867/deliveryguard-grevix/actions) · [Evidence packet](submission-verification.json)
+[Open the public demo](https://deliveryguard-412542191970.asia-south1.run.app/) · [Source](https://github.com/gowtham66867/Grevix_DeliveryGuard) · [CI runs](https://github.com/gowtham66867/Grevix_DeliveryGuard/actions) · [Evidence packet](submission-verification.json)
 
 ## Reproduce the value in three minutes
 
@@ -38,4 +38,4 @@ The initial buyer hypothesis is a small agency owner or operations lead. An inte
 
 ## Event compliance status
 
-Phase 3 Pressure Test has a confirmed receipt. Final Forge is pending its 12 October 00:00–02:00 IST window. Assigned Card 1 is for PulseGuard Edge and is not implemented in this separate DeliveryGuard prototype; organizer acceptance of the switch is unverified. Genuine human feedback and the corresponding Card 2 improvement evidence remain pending. Engineering verification cannot resolve these eligibility gaps. No claim of top-three placement or full challenge completion is made.
+Phase 3 Pressure Test has a confirmed receipt. Final Forge was submitted during its 12 October 00:00–02:00 IST window; its saved record shows the public repository URL. Assigned Card 1 is for PulseGuard Edge and is not implemented in this separate DeliveryGuard prototype; organizer acceptance of the switch is unverified. Genuine human feedback and the corresponding Card 2 improvement evidence remain pending. Engineering verification cannot resolve these eligibility gaps. No claim of top-three placement or full challenge completion is made.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T18:07:21.709Z",
+  "generatedAt": "2026-10-11T18:33:05.664Z",
   "scope": "Fresh local engineering verification plus previously recorded Cloud Run browser evidence. No live-model benchmark or customer validation.",
   "unitTests": {
     "passed": 87,
@@ -72,14 +72,13 @@
   "releaseVerdict": "Engineering checks pass. Event compliance remains incomplete.",
   "unresolved": [
     "Assigned PulseGuard Edge Card 1 not implemented in DeliveryGuard; organizer acceptance of the project switch is unverified.",
-    "Genuine human feedback and corresponding Card 2 improvement evidence pending.",
-    "Final Forge receipt pending."
+    "Genuine human feedback and corresponding Card 2 improvement evidence pending."
   ],
   "artifacts": [
     {
       "path": "docs/submission-answers.md",
-      "bytes": 5556,
-      "sha256": "d76e896fa84895906b1a95da4fa73610d6e17fca1657cb8e3a4920a8f1eacee3"
+      "bytes": 5708,
+      "sha256": "c71fa83cda37630d37a88bd3613a2838b4df7e0d7a3a1944e49c0fe44dbb9dce"
     },
     {
       "path": "docs/business-case.md",
@@ -108,13 +107,13 @@
     },
     {
       "path": "docs/decision-log.md",
-      "bytes": 2739,
-      "sha256": "1766ef5abe9bc8d148da831f02c7bf829e20ec9c3f638272e211a94e2160942c"
+      "bytes": 3210,
+      "sha256": "aeecac4a94acb8c82372e3ad63bd6cba2865fceb76de50284d17f93b6dbcb043"
     },
     {
       "path": "docs/judge-guide.md",
-      "bytes": 4943,
-      "sha256": "609bc88b91f5d9a5a9eaa0f73115c50c5777c5dc83cfbd0bacef90b51024807d"
+      "bytes": 5003,
+      "sha256": "6330b54fdd968c5002e76582defcb8ade48bf65fe3869db9d66b1aa5dd594218"
     },
     {
       "path": "docs/live-browser-proof.json",
@@ -124,7 +123,7 @@
     {
       "path": "evals/report.json",
       "bytes": 4968,
-      "sha256": "f65d1ee4336d7d2c12370f51d422ef6ff54c674be476c40c77ba7dc912162af2"
+      "sha256": "8463cd58882ccbc4c01d21f42409642d9ede07cf184c6de43e8bad7b08f29892"
     },
     {
       "path": "feedback/README.md",

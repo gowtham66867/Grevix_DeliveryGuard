@@ -1,6 +1,6 @@
 # DeliveryGuard — prepared submission answers
 
-Draft for review. This is not a confirmation of submission or event compliance.
+Supporting submission materials. The Final Forge form accepted one required repository URL, submitted on 12 October 2026; these supporting answers are provided in the repository. Form completion does not establish event compliance.
 
 ## Project name
 DeliveryGuard
@@ -18,7 +18,7 @@ The synthetic Northstar engagement has ₹1,20,000 revenue. A frontend staffing 
 https://deliveryguard-412542191970.asia-south1.run.app/
 
 ## Public source repository
-https://github.com/gowtham66867/deliveryguard-grevix
+https://github.com/gowtham66867/Grevix_DeliveryGuard
 
 ## Technology and AI tools
 JavaScript ES modules, Node.js, HTML/CSS/SVG, browser local storage, Docker and Google Cloud Run. Codex assisted with implementation, documentation and verification. The deployed demo uses a transparent local-rules interpreter. An optional server-side OpenAI Responses interpreter uses strict structured output, evidence grounding and bounded calls; it is mock-tested and is not configured in the public demo.
@@ -44,13 +44,13 @@ DeliveryGuard helps small agencies protect fixed-fee client delivery when staffi
 
 ## Build evidence links
 
-Judge walkthrough and claim-to-source map: https://github.com/gowtham66867/deliveryguard-grevix/blob/main/docs/judge-guide.md
+Judge walkthrough and claim-to-source map: https://github.com/gowtham66867/Grevix_DeliveryGuard/blob/main/docs/judge-guide.md
 
-Reproducible verification packet: https://github.com/gowtham66867/deliveryguard-grevix/blob/main/docs/submission-verification.json
+Reproducible verification packet: https://github.com/gowtham66867/Grevix_DeliveryGuard/blob/main/docs/submission-verification.json
 
-Passing CI history: https://github.com/gowtham66867/deliveryguard-grevix/actions
+Passing CI history: https://github.com/gowtham66867/Grevix_DeliveryGuard/actions
 
-Build decisions: https://github.com/gowtham66867/deliveryguard-grevix/blob/main/docs/decision-log.md
+Build decisions: https://github.com/gowtham66867/Grevix_DeliveryGuard/blob/main/docs/decision-log.md
 
 ## What changed before Final Forge
 
