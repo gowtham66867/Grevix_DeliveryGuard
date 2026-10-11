@@ -1,0 +1,2679 @@
+{
+  "schemaVersion": 1,
+  "application": "DeliveryGuard",
+  "generatedAt": "2026-10-11T16:17:40.284Z",
+  "mode": "local-rules",
+  "plan": {
+    "id": "northstar-launch",
+    "name": "Northstar client portal",
+    "client": "Northstar Advisory",
+    "currency": "INR",
+    "revenue": 120000,
+    "budget": 58000,
+    "deadline": 16,
+    "latePenalty": 3000,
+    "minMargin": 0.2,
+    "resources": [
+      {
+        "id": "lead",
+        "name": "Delivery lead",
+        "availableFrom": 0
+      },
+      {
+        "id": "design",
+        "name": "Designer",
+        "availableFrom": 0
+      },
+      {
+        "id": "backend",
+        "name": "Backend engineer",
+        "availableFrom": 0
+      },
+      {
+        "id": "frontend",
+        "name": "Frontend engineer",
+        "availableFrom": 0
+      },
+      {
+        "id": "qa",
+        "name": "QA engineer",
+        "availableFrom": 0
+      },
+      {
+        "id": "backup",
+        "name": "Approved backup pool",
+        "availableFrom": 0
+      }
+    ],
+    "tasks": [
+      {
+        "id": "brief",
+        "name": "Confirm requirements",
+        "owner": "lead",
+        "days": 2,
+        "cost": 6000,
+        "required": true,
+        "value": 10,
+        "deps": [],
+        "alternatives": []
+      },
+      {
+        "id": "design",
+        "name": "Design client portal",
+        "owner": "design",
+        "days": 3,
+        "cost": 10000,
+        "required": true,
+        "value": 9,
+        "deps": [
+          "brief"
+        ],
+        "alternatives": []
+      },
+      {
+        "id": "api",
+        "name": "Build secure API",
+        "owner": "backend",
+        "days": 5,
+        "cost": 18000,
+        "required": true,
+        "value": 10,
+        "deps": [
+          "brief"
+        ],
+        "alternatives": []
+      },
+      {
+        "id": "ui",
+        "name": "Build portal interface",
+        "owner": "frontend",
+        "days": 4,
+        "cost": 14000,
+        "required": true,
+        "value": 10,
+        "deps": [
+          "design"
+        ],
+        "alternatives": [
+          {
+            "id": "backup-ui",
+            "name": "Use backup frontend engineer",
+            "owner": "backup",
+            "days": 3,
+            "cost": 20000,
+            "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+          }
+        ]
+      },
+      {
+        "id": "qa",
+        "name": "Security and acceptance tests",
+        "owner": "qa",
+        "days": 3,
+        "cost": 6000,
+        "required": true,
+        "value": 10,
+        "deps": [
+          "ui",
+          "api"
+        ],
+        "alternatives": []
+      },
+      {
+        "id": "handoff",
+        "name": "Client handoff",
+        "owner": "lead",
+        "days": 1,
+        "cost": 2000,
+        "required": true,
+        "value": 10,
+        "deps": [
+          "qa"
+        ],
+        "alternatives": []
+      }
+    ]
+  },
+  "decisionBase": {
+    "id": "northstar-launch",
+    "name": "Northstar client portal",
+    "client": "Northstar Advisory",
+    "currency": "INR",
+    "revenue": 120000,
+    "budget": 70000,
+    "deadline": 16,
+    "latePenalty": 3000,
+    "minMargin": 0.2,
+    "resources": [
+      {
+        "id": "lead",
+        "name": "Delivery lead",
+        "availableFrom": 0
+      },
+      {
+        "id": "design",
+        "name": "Designer",
+        "availableFrom": 0
+      },
+      {
+        "id": "backend",
+        "name": "Backend engineer",
+        "availableFrom": 0
+      },
+      {
+        "id": "frontend",
+        "name": "Frontend engineer",
+        "availableFrom": 0
+      },
+      {
+        "id": "qa",
+        "name": "QA engineer",
+        "availableFrom": 0
+      },
+      {
+        "id": "backup",
+        "name": "Approved backup pool",
+        "availableFrom": 0
+      }
+    ],
+    "tasks": [
+      {
+        "id": "brief",
+        "name": "Confirm requirements",
+        "owner": "lead",
+        "days": 2,
+        "cost": 6000,
+        "required": true,
+        "value": 10,
+        "deps": [],
+        "alternatives": []
+      },
+      {
+        "id": "design",
+        "name": "Design client portal",
+        "owner": "design",
+        "days": 3,
+        "cost": 10000,
+        "required": true,
+        "value": 9,
+        "deps": [
+          "brief"
+        ],
+        "alternatives": []
+      },
+      {
+        "id": "api",
+        "name": "Build secure API",
+        "owner": "backend",
+        "days": 5,
+        "cost": 18000,
+        "required": true,
+        "value": 10,
+        "deps": [
+          "brief"
+        ],
+        "alternatives": []
+      },
+      {
+        "id": "ui",
+        "name": "Build portal interface",
+        "owner": "frontend",
+        "days": 4,
+        "cost": 14000,
+        "required": true,
+        "value": 10,
+        "deps": [
+          "design"
+        ],
+        "alternatives": [
+          {
+            "id": "backup-ui",
+            "name": "Use backup frontend engineer",
+            "owner": "backup",
+            "days": 3,
+            "cost": 20000,
+            "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+          }
+        ]
+      },
+      {
+        "id": "analytics",
+        "name": "Add usage analytics",
+        "owner": "frontend",
+        "days": 2,
+        "cost": 4000,
+        "required": false,
+        "value": 3,
+        "deps": [
+          "ui"
+        ],
+        "alternatives": []
+      },
+      {
+        "id": "qa",
+        "name": "Security and acceptance tests",
+        "owner": "qa",
+        "days": 3,
+        "cost": 6000,
+        "required": true,
+        "value": 10,
+        "deps": [
+          "ui",
+          "api"
+        ],
+        "alternatives": []
+      },
+      {
+        "id": "handoff",
+        "name": "Client handoff",
+        "owner": "lead",
+        "days": 1,
+        "cost": 2000,
+        "required": true,
+        "value": 10,
+        "deps": [
+          "qa"
+        ],
+        "alternatives": []
+      },
+      {
+        "id": "training",
+        "name": "Extra training workshop",
+        "owner": "lead",
+        "days": 2,
+        "cost": 3000,
+        "required": false,
+        "value": 2,
+        "deps": [
+          "handoff"
+        ],
+        "alternatives": []
+      }
+    ]
+  },
+  "decision": {
+    "input": "Our budget is reduced to ₹58,000.",
+    "status": "review",
+    "interpretation": {
+      "status": "ready",
+      "disruption": {
+        "type": "budget",
+        "target": "budget",
+        "value": 58000
+      },
+      "reason": "Extracted an explicit change grounded in the active plan.",
+      "evidence": "budget is reduced to ₹58,000",
+      "mode": "local-rules"
+    },
+    "trace": [
+      {
+        "step": 1,
+        "role": "Coordinator",
+        "tool": "validate_plan",
+        "status": "passed",
+        "detail": "8 tasks and 6 resources validated; revision 09fa4551."
+      },
+      {
+        "step": 2,
+        "role": "Interpreter",
+        "tool": "ground_disruption",
+        "status": "ready",
+        "detail": "Extracted an explicit change grounded in the active plan."
+      },
+      {
+        "step": 3,
+        "role": "Policy guard",
+        "tool": "validate_change",
+        "status": "passed",
+        "detail": "Only allowlisted parameters may change; required scope cannot be deleted."
+      },
+      {
+        "step": 4,
+        "role": "Scenario planner",
+        "tool": "simulate_counterfactual",
+        "status": "passed",
+        "detail": "Doing nothing finishes on day 15 at ₹63000; lateness cost ₹0."
+      },
+      {
+        "step": 5,
+        "role": "Recovery planner",
+        "tool": "enumerate_and_rank",
+        "status": "passed",
+        "detail": "8 unique candidates; 1 feasible; enumeration complete."
+      },
+      {
+        "step": 6,
+        "role": "Verifier",
+        "tool": "verify_recommendation",
+        "status": "passed",
+        "detail": "6 checks; 0 unresolved external facts."
+      },
+      {
+        "step": 7,
+        "role": "Coordinator",
+        "tool": "request_approval",
+        "status": "waiting",
+        "detail": "Defer Add usage analytics + Defer Extra training workshop. Deliver by working day 13; 3 days of buffer. Cost ₹56,000 with ₹2,000 budget remaining; save ₹7,000 versus the disrupted plan. 2 task changes. All declared constraints pass."
+      }
+    ],
+    "result": {
+      "revision": "09fa4551",
+      "disruption": {
+        "type": "budget",
+        "target": "budget",
+        "value": 58000
+      },
+      "profile": "balanced",
+      "candidates": [
+        {
+          "id": "candidate-eb2bb86a",
+          "label": "Defer Add usage analytics + Defer Extra training workshop",
+          "plan": {
+            "id": "northstar-launch",
+            "name": "Northstar client portal",
+            "client": "Northstar Advisory",
+            "currency": "INR",
+            "revenue": 120000,
+            "budget": 58000,
+            "deadline": 16,
+            "latePenalty": 3000,
+            "minMargin": 0.2,
+            "resources": [
+              {
+                "id": "lead",
+                "name": "Delivery lead",
+                "availableFrom": 0
+              },
+              {
+                "id": "design",
+                "name": "Designer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backend",
+                "name": "Backend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "frontend",
+                "name": "Frontend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "qa",
+                "name": "QA engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backup",
+                "name": "Approved backup pool",
+                "availableFrom": 0
+              }
+            ],
+            "tasks": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "days": 2,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [],
+                "alternatives": []
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "days": 3,
+                "cost": 10000,
+                "required": true,
+                "value": 9,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "days": 5,
+                "cost": 18000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "frontend",
+                "days": 4,
+                "cost": 14000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "design"
+                ],
+                "alternatives": [
+                  {
+                    "id": "backup-ui",
+                    "name": "Use backup frontend engineer",
+                    "owner": "backup",
+                    "days": 3,
+                    "cost": 20000,
+                    "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+                  }
+                ]
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "days": 3,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "ui",
+                  "api"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "days": 1,
+                "cost": 2000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "qa"
+                ],
+                "alternatives": []
+              }
+            ]
+          },
+          "patch": [
+            {
+              "taskId": "analytics",
+              "action": "defer",
+              "before": {
+                "owner": "frontend",
+                "days": 2,
+                "cost": 4000
+              },
+              "after": null
+            },
+            {
+              "taskId": "training",
+              "action": "defer",
+              "before": {
+                "owner": "lead",
+                "days": 2,
+                "cost": 3000
+              },
+              "after": null
+            }
+          ],
+          "metrics": {
+            "rows": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "start": 0,
+                "finish": 2,
+                "days": 2,
+                "required": true
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "start": 2,
+                "finish": 7,
+                "days": 5,
+                "required": true
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "start": 2,
+                "finish": 5,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "frontend",
+                "start": 5,
+                "finish": 9,
+                "days": 4,
+                "required": true
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "start": 9,
+                "finish": 12,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "start": 12,
+                "finish": 13,
+                "days": 1,
+                "required": true
+              }
+            ],
+            "finish": 13,
+            "cost": 56000,
+            "lateDays": 0,
+            "penalty": 0,
+            "margin": 64000,
+            "marginRate": 0.5333333333333333,
+            "headroom": 2000,
+            "slack": 3
+          },
+          "violations": [],
+          "feasible": true,
+          "status": "verified",
+          "objectives": {
+            "cost": 56000,
+            "change": 2,
+            "lostValue": 0.08,
+            "movement": 0,
+            "uncertainty": 0
+          },
+          "verification": [],
+          "frontier": true,
+          "score": 0.24
+        },
+        {
+          "id": "candidate-54c8f3e3",
+          "label": "Keep the current approach",
+          "plan": {
+            "id": "northstar-launch",
+            "name": "Northstar client portal",
+            "client": "Northstar Advisory",
+            "currency": "INR",
+            "revenue": 120000,
+            "budget": 58000,
+            "deadline": 16,
+            "latePenalty": 3000,
+            "minMargin": 0.2,
+            "resources": [
+              {
+                "id": "lead",
+                "name": "Delivery lead",
+                "availableFrom": 0
+              },
+              {
+                "id": "design",
+                "name": "Designer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backend",
+                "name": "Backend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "frontend",
+                "name": "Frontend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "qa",
+                "name": "QA engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backup",
+                "name": "Approved backup pool",
+                "availableFrom": 0
+              }
+            ],
+            "tasks": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "days": 2,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [],
+                "alternatives": []
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "days": 3,
+                "cost": 10000,
+                "required": true,
+                "value": 9,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "days": 5,
+                "cost": 18000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "frontend",
+                "days": 4,
+                "cost": 14000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "design"
+                ],
+                "alternatives": [
+                  {
+                    "id": "backup-ui",
+                    "name": "Use backup frontend engineer",
+                    "owner": "backup",
+                    "days": 3,
+                    "cost": 20000,
+                    "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+                  }
+                ]
+              },
+              {
+                "id": "analytics",
+                "name": "Add usage analytics",
+                "owner": "frontend",
+                "days": 2,
+                "cost": 4000,
+                "required": false,
+                "value": 3,
+                "deps": [
+                  "ui"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "days": 3,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "ui",
+                  "api"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "days": 1,
+                "cost": 2000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "qa"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "training",
+                "name": "Extra training workshop",
+                "owner": "lead",
+                "days": 2,
+                "cost": 3000,
+                "required": false,
+                "value": 2,
+                "deps": [
+                  "handoff"
+                ],
+                "alternatives": []
+              }
+            ]
+          },
+          "patch": [],
+          "metrics": {
+            "rows": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "start": 0,
+                "finish": 2,
+                "days": 2,
+                "required": true
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "start": 2,
+                "finish": 7,
+                "days": 5,
+                "required": true
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "start": 2,
+                "finish": 5,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "frontend",
+                "start": 5,
+                "finish": 9,
+                "days": 4,
+                "required": true
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "start": 9,
+                "finish": 12,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "start": 12,
+                "finish": 13,
+                "days": 1,
+                "required": true
+              },
+              {
+                "id": "analytics",
+                "name": "Add usage analytics",
+                "owner": "frontend",
+                "start": 9,
+                "finish": 11,
+                "days": 2,
+                "required": false
+              },
+              {
+                "id": "training",
+                "name": "Extra training workshop",
+                "owner": "lead",
+                "start": 13,
+                "finish": 15,
+                "days": 2,
+                "required": false
+              }
+            ],
+            "finish": 15,
+            "cost": 63000,
+            "lateDays": 0,
+            "penalty": 0,
+            "margin": 57000,
+            "marginRate": 0.475,
+            "headroom": -5000,
+            "slack": 1
+          },
+          "violations": [
+            {
+              "code": "BUDGET",
+              "message": "Cost exceeds budget by ₹5000."
+            }
+          ],
+          "feasible": false,
+          "status": "infeasible",
+          "objectives": {
+            "cost": 63000,
+            "change": 0,
+            "lostValue": 0,
+            "movement": 0,
+            "uncertainty": 0
+          },
+          "verification": [],
+          "frontier": false,
+          "score": 0.18
+        },
+        {
+          "id": "candidate-bdd5901d",
+          "label": "Defer Extra training workshop",
+          "plan": {
+            "id": "northstar-launch",
+            "name": "Northstar client portal",
+            "client": "Northstar Advisory",
+            "currency": "INR",
+            "revenue": 120000,
+            "budget": 58000,
+            "deadline": 16,
+            "latePenalty": 3000,
+            "minMargin": 0.2,
+            "resources": [
+              {
+                "id": "lead",
+                "name": "Delivery lead",
+                "availableFrom": 0
+              },
+              {
+                "id": "design",
+                "name": "Designer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backend",
+                "name": "Backend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "frontend",
+                "name": "Frontend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "qa",
+                "name": "QA engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backup",
+                "name": "Approved backup pool",
+                "availableFrom": 0
+              }
+            ],
+            "tasks": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "days": 2,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [],
+                "alternatives": []
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "days": 3,
+                "cost": 10000,
+                "required": true,
+                "value": 9,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "days": 5,
+                "cost": 18000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "frontend",
+                "days": 4,
+                "cost": 14000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "design"
+                ],
+                "alternatives": [
+                  {
+                    "id": "backup-ui",
+                    "name": "Use backup frontend engineer",
+                    "owner": "backup",
+                    "days": 3,
+                    "cost": 20000,
+                    "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+                  }
+                ]
+              },
+              {
+                "id": "analytics",
+                "name": "Add usage analytics",
+                "owner": "frontend",
+                "days": 2,
+                "cost": 4000,
+                "required": false,
+                "value": 3,
+                "deps": [
+                  "ui"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "days": 3,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "ui",
+                  "api"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "days": 1,
+                "cost": 2000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "qa"
+                ],
+                "alternatives": []
+              }
+            ]
+          },
+          "patch": [
+            {
+              "taskId": "training",
+              "action": "defer",
+              "before": {
+                "owner": "lead",
+                "days": 2,
+                "cost": 3000
+              },
+              "after": null
+            }
+          ],
+          "metrics": {
+            "rows": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "start": 0,
+                "finish": 2,
+                "days": 2,
+                "required": true
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "start": 2,
+                "finish": 7,
+                "days": 5,
+                "required": true
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "start": 2,
+                "finish": 5,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "frontend",
+                "start": 5,
+                "finish": 9,
+                "days": 4,
+                "required": true
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "start": 9,
+                "finish": 12,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "start": 12,
+                "finish": 13,
+                "days": 1,
+                "required": true
+              },
+              {
+                "id": "analytics",
+                "name": "Add usage analytics",
+                "owner": "frontend",
+                "start": 9,
+                "finish": 11,
+                "days": 2,
+                "required": false
+              }
+            ],
+            "finish": 13,
+            "cost": 60000,
+            "lateDays": 0,
+            "penalty": 0,
+            "margin": 60000,
+            "marginRate": 0.5,
+            "headroom": -2000,
+            "slack": 3
+          },
+          "violations": [
+            {
+              "code": "BUDGET",
+              "message": "Cost exceeds budget by ₹2000."
+            }
+          ],
+          "feasible": false,
+          "status": "infeasible",
+          "objectives": {
+            "cost": 60000,
+            "change": 1,
+            "lostValue": 0.03,
+            "movement": 0,
+            "uncertainty": 0
+          },
+          "verification": [],
+          "frontier": false,
+          "score": 0.21
+        },
+        {
+          "id": "candidate-d6c1b336",
+          "label": "Defer Add usage analytics",
+          "plan": {
+            "id": "northstar-launch",
+            "name": "Northstar client portal",
+            "client": "Northstar Advisory",
+            "currency": "INR",
+            "revenue": 120000,
+            "budget": 58000,
+            "deadline": 16,
+            "latePenalty": 3000,
+            "minMargin": 0.2,
+            "resources": [
+              {
+                "id": "lead",
+                "name": "Delivery lead",
+                "availableFrom": 0
+              },
+              {
+                "id": "design",
+                "name": "Designer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backend",
+                "name": "Backend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "frontend",
+                "name": "Frontend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "qa",
+                "name": "QA engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backup",
+                "name": "Approved backup pool",
+                "availableFrom": 0
+              }
+            ],
+            "tasks": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "days": 2,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [],
+                "alternatives": []
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "days": 3,
+                "cost": 10000,
+                "required": true,
+                "value": 9,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "days": 5,
+                "cost": 18000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "frontend",
+                "days": 4,
+                "cost": 14000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "design"
+                ],
+                "alternatives": [
+                  {
+                    "id": "backup-ui",
+                    "name": "Use backup frontend engineer",
+                    "owner": "backup",
+                    "days": 3,
+                    "cost": 20000,
+                    "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+                  }
+                ]
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "days": 3,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "ui",
+                  "api"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "days": 1,
+                "cost": 2000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "qa"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "training",
+                "name": "Extra training workshop",
+                "owner": "lead",
+                "days": 2,
+                "cost": 3000,
+                "required": false,
+                "value": 2,
+                "deps": [
+                  "handoff"
+                ],
+                "alternatives": []
+              }
+            ]
+          },
+          "patch": [
+            {
+              "taskId": "analytics",
+              "action": "defer",
+              "before": {
+                "owner": "frontend",
+                "days": 2,
+                "cost": 4000
+              },
+              "after": null
+            }
+          ],
+          "metrics": {
+            "rows": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "start": 0,
+                "finish": 2,
+                "days": 2,
+                "required": true
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "start": 2,
+                "finish": 7,
+                "days": 5,
+                "required": true
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "start": 2,
+                "finish": 5,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "frontend",
+                "start": 5,
+                "finish": 9,
+                "days": 4,
+                "required": true
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "start": 9,
+                "finish": 12,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "start": 12,
+                "finish": 13,
+                "days": 1,
+                "required": true
+              },
+              {
+                "id": "training",
+                "name": "Extra training workshop",
+                "owner": "lead",
+                "start": 13,
+                "finish": 15,
+                "days": 2,
+                "required": false
+              }
+            ],
+            "finish": 15,
+            "cost": 59000,
+            "lateDays": 0,
+            "penalty": 0,
+            "margin": 61000,
+            "marginRate": 0.5083333333333333,
+            "headroom": -1000,
+            "slack": 1
+          },
+          "violations": [
+            {
+              "code": "BUDGET",
+              "message": "Cost exceeds budget by ₹1000."
+            }
+          ],
+          "feasible": false,
+          "status": "infeasible",
+          "objectives": {
+            "cost": 59000,
+            "change": 1,
+            "lostValue": 0.05,
+            "movement": 0,
+            "uncertainty": 0
+          },
+          "verification": [],
+          "frontier": false,
+          "score": 0.21
+        },
+        {
+          "id": "candidate-aad96173",
+          "label": "Use backup frontend engineer",
+          "plan": {
+            "id": "northstar-launch",
+            "name": "Northstar client portal",
+            "client": "Northstar Advisory",
+            "currency": "INR",
+            "revenue": 120000,
+            "budget": 58000,
+            "deadline": 16,
+            "latePenalty": 3000,
+            "minMargin": 0.2,
+            "resources": [
+              {
+                "id": "lead",
+                "name": "Delivery lead",
+                "availableFrom": 0
+              },
+              {
+                "id": "design",
+                "name": "Designer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backend",
+                "name": "Backend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "frontend",
+                "name": "Frontend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "qa",
+                "name": "QA engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backup",
+                "name": "Approved backup pool",
+                "availableFrom": 0
+              }
+            ],
+            "tasks": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "days": 2,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [],
+                "alternatives": []
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "days": 3,
+                "cost": 10000,
+                "required": true,
+                "value": 9,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "days": 5,
+                "cost": 18000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "backup",
+                "days": 3,
+                "cost": 20000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "design"
+                ],
+                "alternatives": [
+                  {
+                    "id": "backup-ui",
+                    "name": "Use backup frontend engineer",
+                    "owner": "backup",
+                    "days": 3,
+                    "cost": 20000,
+                    "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+                  }
+                ]
+              },
+              {
+                "id": "analytics",
+                "name": "Add usage analytics",
+                "owner": "frontend",
+                "days": 2,
+                "cost": 4000,
+                "required": false,
+                "value": 3,
+                "deps": [
+                  "ui"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "days": 3,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "ui",
+                  "api"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "days": 1,
+                "cost": 2000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "qa"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "training",
+                "name": "Extra training workshop",
+                "owner": "lead",
+                "days": 2,
+                "cost": 3000,
+                "required": false,
+                "value": 2,
+                "deps": [
+                  "handoff"
+                ],
+                "alternatives": []
+              }
+            ]
+          },
+          "patch": [
+            {
+              "taskId": "ui",
+              "action": "replace",
+              "alternativeId": "backup-ui",
+              "before": {
+                "owner": "frontend",
+                "days": 4,
+                "cost": 14000
+              },
+              "after": {
+                "owner": "backup",
+                "days": 3,
+                "cost": 20000
+              }
+            }
+          ],
+          "metrics": {
+            "rows": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "start": 0,
+                "finish": 2,
+                "days": 2,
+                "required": true
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "start": 2,
+                "finish": 7,
+                "days": 5,
+                "required": true
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "start": 2,
+                "finish": 5,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "backup",
+                "start": 5,
+                "finish": 8,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "start": 8,
+                "finish": 11,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "start": 11,
+                "finish": 12,
+                "days": 1,
+                "required": true
+              },
+              {
+                "id": "analytics",
+                "name": "Add usage analytics",
+                "owner": "frontend",
+                "start": 8,
+                "finish": 10,
+                "days": 2,
+                "required": false
+              },
+              {
+                "id": "training",
+                "name": "Extra training workshop",
+                "owner": "lead",
+                "start": 12,
+                "finish": 14,
+                "days": 2,
+                "required": false
+              }
+            ],
+            "finish": 14,
+            "cost": 69000,
+            "lateDays": 0,
+            "penalty": 0,
+            "margin": 51000,
+            "marginRate": 0.425,
+            "headroom": -11000,
+            "slack": 2
+          },
+          "violations": [
+            {
+              "code": "BUDGET",
+              "message": "Cost exceeds budget by ₹11000."
+            }
+          ],
+          "feasible": false,
+          "status": "infeasible",
+          "objectives": {
+            "cost": 69000,
+            "change": 1,
+            "lostValue": 0,
+            "movement": 0.03,
+            "uncertainty": 1
+          },
+          "verification": [
+            "Confirm backup engineer capacity and ₹20,000 quote"
+          ],
+          "frontier": false,
+          "score": 0.24
+        },
+        {
+          "id": "candidate-8a08910d",
+          "label": "Defer Extra training workshop + Use backup frontend engineer",
+          "plan": {
+            "id": "northstar-launch",
+            "name": "Northstar client portal",
+            "client": "Northstar Advisory",
+            "currency": "INR",
+            "revenue": 120000,
+            "budget": 58000,
+            "deadline": 16,
+            "latePenalty": 3000,
+            "minMargin": 0.2,
+            "resources": [
+              {
+                "id": "lead",
+                "name": "Delivery lead",
+                "availableFrom": 0
+              },
+              {
+                "id": "design",
+                "name": "Designer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backend",
+                "name": "Backend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "frontend",
+                "name": "Frontend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "qa",
+                "name": "QA engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backup",
+                "name": "Approved backup pool",
+                "availableFrom": 0
+              }
+            ],
+            "tasks": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "days": 2,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [],
+                "alternatives": []
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "days": 3,
+                "cost": 10000,
+                "required": true,
+                "value": 9,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "days": 5,
+                "cost": 18000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "backup",
+                "days": 3,
+                "cost": 20000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "design"
+                ],
+                "alternatives": [
+                  {
+                    "id": "backup-ui",
+                    "name": "Use backup frontend engineer",
+                    "owner": "backup",
+                    "days": 3,
+                    "cost": 20000,
+                    "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+                  }
+                ]
+              },
+              {
+                "id": "analytics",
+                "name": "Add usage analytics",
+                "owner": "frontend",
+                "days": 2,
+                "cost": 4000,
+                "required": false,
+                "value": 3,
+                "deps": [
+                  "ui"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "days": 3,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "ui",
+                  "api"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "days": 1,
+                "cost": 2000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "qa"
+                ],
+                "alternatives": []
+              }
+            ]
+          },
+          "patch": [
+            {
+              "taskId": "training",
+              "action": "defer",
+              "before": {
+                "owner": "lead",
+                "days": 2,
+                "cost": 3000
+              },
+              "after": null
+            },
+            {
+              "taskId": "ui",
+              "action": "replace",
+              "alternativeId": "backup-ui",
+              "before": {
+                "owner": "frontend",
+                "days": 4,
+                "cost": 14000
+              },
+              "after": {
+                "owner": "backup",
+                "days": 3,
+                "cost": 20000
+              }
+            }
+          ],
+          "metrics": {
+            "rows": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "start": 0,
+                "finish": 2,
+                "days": 2,
+                "required": true
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "start": 2,
+                "finish": 7,
+                "days": 5,
+                "required": true
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "start": 2,
+                "finish": 5,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "backup",
+                "start": 5,
+                "finish": 8,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "start": 8,
+                "finish": 11,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "start": 11,
+                "finish": 12,
+                "days": 1,
+                "required": true
+              },
+              {
+                "id": "analytics",
+                "name": "Add usage analytics",
+                "owner": "frontend",
+                "start": 8,
+                "finish": 10,
+                "days": 2,
+                "required": false
+              }
+            ],
+            "finish": 12,
+            "cost": 66000,
+            "lateDays": 0,
+            "penalty": 0,
+            "margin": 54000,
+            "marginRate": 0.45,
+            "headroom": -8000,
+            "slack": 4
+          },
+          "violations": [
+            {
+              "code": "BUDGET",
+              "message": "Cost exceeds budget by ₹8000."
+            }
+          ],
+          "feasible": false,
+          "status": "infeasible",
+          "objectives": {
+            "cost": 66000,
+            "change": 2,
+            "lostValue": 0.03,
+            "movement": 0.02,
+            "uncertainty": 1
+          },
+          "verification": [
+            "Confirm backup engineer capacity and ₹20,000 quote"
+          ],
+          "frontier": false,
+          "score": 0.26
+        },
+        {
+          "id": "candidate-76d25fa6",
+          "label": "Defer Add usage analytics + Use backup frontend engineer",
+          "plan": {
+            "id": "northstar-launch",
+            "name": "Northstar client portal",
+            "client": "Northstar Advisory",
+            "currency": "INR",
+            "revenue": 120000,
+            "budget": 58000,
+            "deadline": 16,
+            "latePenalty": 3000,
+            "minMargin": 0.2,
+            "resources": [
+              {
+                "id": "lead",
+                "name": "Delivery lead",
+                "availableFrom": 0
+              },
+              {
+                "id": "design",
+                "name": "Designer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backend",
+                "name": "Backend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "frontend",
+                "name": "Frontend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "qa",
+                "name": "QA engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backup",
+                "name": "Approved backup pool",
+                "availableFrom": 0
+              }
+            ],
+            "tasks": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "days": 2,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [],
+                "alternatives": []
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "days": 3,
+                "cost": 10000,
+                "required": true,
+                "value": 9,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "days": 5,
+                "cost": 18000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "backup",
+                "days": 3,
+                "cost": 20000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "design"
+                ],
+                "alternatives": [
+                  {
+                    "id": "backup-ui",
+                    "name": "Use backup frontend engineer",
+                    "owner": "backup",
+                    "days": 3,
+                    "cost": 20000,
+                    "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+                  }
+                ]
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "days": 3,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "ui",
+                  "api"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "days": 1,
+                "cost": 2000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "qa"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "training",
+                "name": "Extra training workshop",
+                "owner": "lead",
+                "days": 2,
+                "cost": 3000,
+                "required": false,
+                "value": 2,
+                "deps": [
+                  "handoff"
+                ],
+                "alternatives": []
+              }
+            ]
+          },
+          "patch": [
+            {
+              "taskId": "analytics",
+              "action": "defer",
+              "before": {
+                "owner": "frontend",
+                "days": 2,
+                "cost": 4000
+              },
+              "after": null
+            },
+            {
+              "taskId": "ui",
+              "action": "replace",
+              "alternativeId": "backup-ui",
+              "before": {
+                "owner": "frontend",
+                "days": 4,
+                "cost": 14000
+              },
+              "after": {
+                "owner": "backup",
+                "days": 3,
+                "cost": 20000
+              }
+            }
+          ],
+          "metrics": {
+            "rows": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "start": 0,
+                "finish": 2,
+                "days": 2,
+                "required": true
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "start": 2,
+                "finish": 7,
+                "days": 5,
+                "required": true
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "start": 2,
+                "finish": 5,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "backup",
+                "start": 5,
+                "finish": 8,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "start": 8,
+                "finish": 11,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "start": 11,
+                "finish": 12,
+                "days": 1,
+                "required": true
+              },
+              {
+                "id": "training",
+                "name": "Extra training workshop",
+                "owner": "lead",
+                "start": 12,
+                "finish": 14,
+                "days": 2,
+                "required": false
+              }
+            ],
+            "finish": 14,
+            "cost": 65000,
+            "lateDays": 0,
+            "penalty": 0,
+            "margin": 55000,
+            "marginRate": 0.4583333333333333,
+            "headroom": -7000,
+            "slack": 2
+          },
+          "violations": [
+            {
+              "code": "BUDGET",
+              "message": "Cost exceeds budget by ₹7000."
+            }
+          ],
+          "feasible": false,
+          "status": "infeasible",
+          "objectives": {
+            "cost": 65000,
+            "change": 2,
+            "lostValue": 0.05,
+            "movement": 0.02,
+            "uncertainty": 1
+          },
+          "verification": [
+            "Confirm backup engineer capacity and ₹20,000 quote"
+          ],
+          "frontier": false,
+          "score": 0.27
+        },
+        {
+          "id": "candidate-27800cfa",
+          "label": "Defer Add usage analytics + Defer Extra training workshop + Use backup frontend engineer",
+          "plan": {
+            "id": "northstar-launch",
+            "name": "Northstar client portal",
+            "client": "Northstar Advisory",
+            "currency": "INR",
+            "revenue": 120000,
+            "budget": 58000,
+            "deadline": 16,
+            "latePenalty": 3000,
+            "minMargin": 0.2,
+            "resources": [
+              {
+                "id": "lead",
+                "name": "Delivery lead",
+                "availableFrom": 0
+              },
+              {
+                "id": "design",
+                "name": "Designer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backend",
+                "name": "Backend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "frontend",
+                "name": "Frontend engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "qa",
+                "name": "QA engineer",
+                "availableFrom": 0
+              },
+              {
+                "id": "backup",
+                "name": "Approved backup pool",
+                "availableFrom": 0
+              }
+            ],
+            "tasks": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "days": 2,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [],
+                "alternatives": []
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "days": 3,
+                "cost": 10000,
+                "required": true,
+                "value": 9,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "days": 5,
+                "cost": 18000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "brief"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "backup",
+                "days": 3,
+                "cost": 20000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "design"
+                ],
+                "alternatives": [
+                  {
+                    "id": "backup-ui",
+                    "name": "Use backup frontend engineer",
+                    "owner": "backup",
+                    "days": 3,
+                    "cost": 20000,
+                    "verification": "Confirm backup engineer capacity and ₹20,000 quote"
+                  }
+                ]
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "days": 3,
+                "cost": 6000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "ui",
+                  "api"
+                ],
+                "alternatives": []
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "days": 1,
+                "cost": 2000,
+                "required": true,
+                "value": 10,
+                "deps": [
+                  "qa"
+                ],
+                "alternatives": []
+              }
+            ]
+          },
+          "patch": [
+            {
+              "taskId": "analytics",
+              "action": "defer",
+              "before": {
+                "owner": "frontend",
+                "days": 2,
+                "cost": 4000
+              },
+              "after": null
+            },
+            {
+              "taskId": "training",
+              "action": "defer",
+              "before": {
+                "owner": "lead",
+                "days": 2,
+                "cost": 3000
+              },
+              "after": null
+            },
+            {
+              "taskId": "ui",
+              "action": "replace",
+              "alternativeId": "backup-ui",
+              "before": {
+                "owner": "frontend",
+                "days": 4,
+                "cost": 14000
+              },
+              "after": {
+                "owner": "backup",
+                "days": 3,
+                "cost": 20000
+              }
+            }
+          ],
+          "metrics": {
+            "rows": [
+              {
+                "id": "brief",
+                "name": "Confirm requirements",
+                "owner": "lead",
+                "start": 0,
+                "finish": 2,
+                "days": 2,
+                "required": true
+              },
+              {
+                "id": "api",
+                "name": "Build secure API",
+                "owner": "backend",
+                "start": 2,
+                "finish": 7,
+                "days": 5,
+                "required": true
+              },
+              {
+                "id": "design",
+                "name": "Design client portal",
+                "owner": "design",
+                "start": 2,
+                "finish": 5,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "ui",
+                "name": "Build portal interface",
+                "owner": "backup",
+                "start": 5,
+                "finish": 8,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "qa",
+                "name": "Security and acceptance tests",
+                "owner": "qa",
+                "start": 8,
+                "finish": 11,
+                "days": 3,
+                "required": true
+              },
+              {
+                "id": "handoff",
+                "name": "Client handoff",
+                "owner": "lead",
+                "start": 11,
+                "finish": 12,
+                "days": 1,
+                "required": true
+              }
+            ],
+            "finish": 12,
+            "cost": 62000,
+            "lateDays": 0,
+            "penalty": 0,
+            "margin": 58000,
+            "marginRate": 0.48333333333333334,
+            "headroom": -4000,
+            "slack": 4
+          },
+          "violations": [
+            {
+              "code": "BUDGET",
+              "message": "Cost exceeds budget by ₹4000."
+            }
+          ],
+          "feasible": false,
+          "status": "infeasible",
+          "objectives": {
+            "cost": 62000,
+            "change": 3,
+            "lostValue": 0.08,
+            "movement": 0.02,
+            "uncertainty": 1
+          },
+          "verification": [
+            "Confirm backup engineer capacity and ₹20,000 quote"
+          ],
+          "frontier": false,
+          "score": 0.3
+        }
+      ],
+      "winnerId": "candidate-eb2bb86a",
+      "visited": 8,
+      "truncated": false,
+      "baseline": {
+        "rows": [
+          {
+            "id": "brief",
+            "name": "Confirm requirements",
+            "owner": "lead",
+            "start": 0,
+            "finish": 2,
+            "days": 2,
+            "required": true
+          },
+          {
+            "id": "api",
+            "name": "Build secure API",
+            "owner": "backend",
+            "start": 2,
+            "finish": 7,
+            "days": 5,
+            "required": true
+          },
+          {
+            "id": "design",
+            "name": "Design client portal",
+            "owner": "design",
+            "start": 2,
+            "finish": 5,
+            "days": 3,
+            "required": true
+          },
+          {
+            "id": "ui",
+            "name": "Build portal interface",
+            "owner": "frontend",
+            "start": 5,
+            "finish": 9,
+            "days": 4,
+            "required": true
+          },
+          {
+            "id": "qa",
+            "name": "Security and acceptance tests",
+            "owner": "qa",
+            "start": 9,
+            "finish": 12,
+            "days": 3,
+            "required": true
+          },
+          {
+            "id": "handoff",
+            "name": "Client handoff",
+            "owner": "lead",
+            "start": 12,
+            "finish": 13,
+            "days": 1,
+            "required": true
+          },
+          {
+            "id": "analytics",
+            "name": "Add usage analytics",
+            "owner": "frontend",
+            "start": 9,
+            "finish": 11,
+            "days": 2,
+            "required": false
+          },
+          {
+            "id": "training",
+            "name": "Extra training workshop",
+            "owner": "lead",
+            "start": 13,
+            "finish": 15,
+            "days": 2,
+            "required": false
+          }
+        ],
+        "finish": 15,
+        "cost": 63000,
+        "lateDays": 0,
+        "penalty": 0,
+        "margin": 57000,
+        "marginRate": 0.475,
+        "headroom": 7000,
+        "slack": 1
+      },
+      "impacted": {
+        "rows": [
+          {
+            "id": "brief",
+            "name": "Confirm requirements",
+            "owner": "lead",
+            "start": 0,
+            "finish": 2,
+            "days": 2,
+            "required": true
+          },
+          {
+            "id": "api",
+            "name": "Build secure API",
+            "owner": "backend",
+            "start": 2,
+            "finish": 7,
+            "days": 5,
+            "required": true
+          },
+          {
+            "id": "design",
+            "name": "Design client portal",
+            "owner": "design",
+            "start": 2,
+            "finish": 5,
+            "days": 3,
+            "required": true
+          },
+          {
+            "id": "ui",
+            "name": "Build portal interface",
+            "owner": "frontend",
+            "start": 5,
+            "finish": 9,
+            "days": 4,
+            "required": true
+          },
+          {
+            "id": "qa",
+            "name": "Security and acceptance tests",
+            "owner": "qa",
+            "start": 9,
+            "finish": 12,
+            "days": 3,
+            "required": true
+          },
+          {
+            "id": "handoff",
+            "name": "Client handoff",
+            "owner": "lead",
+            "start": 12,
+            "finish": 13,
+            "days": 1,
+            "required": true
+          },
+          {
+            "id": "analytics",
+            "name": "Add usage analytics",
+            "owner": "frontend",
+            "start": 9,
+            "finish": 11,
+            "days": 2,
+            "required": false
+          },
+          {
+            "id": "training",
+            "name": "Extra training workshop",
+            "owner": "lead",
+            "start": 13,
+            "finish": 15,
+            "days": 2,
+            "required": false
+          }
+        ],
+        "finish": 15,
+        "cost": 63000,
+        "lateDays": 0,
+        "penalty": 0,
+        "margin": 57000,
+        "marginRate": 0.475,
+        "headroom": -5000,
+        "slack": 1
+      }
+    },
+    "critic": {
+      "passed": true,
+      "issues": [],
+      "checks": [
+        "required scope",
+        "dependency order",
+        "resource capacity",
+        "cost reconciliation",
+        "deadline",
+        "margin floor"
+      ],
+      "externalFacts": []
+    },
+    "elapsedMs": 3
+  },
+  "approvalReceipts": [
+    {
+      "from": "09fa4551",
+      "to": "eb2bb86a",
+      "candidateId": "candidate-eb2bb86a",
+      "disruption": {
+        "type": "budget",
+        "target": "budget",
+        "value": 58000
+      },
+      "patch": [
+        {
+          "taskId": "analytics",
+          "action": "defer",
+          "before": {
+            "owner": "frontend",
+            "days": 2,
+            "cost": 4000
+          },
+          "after": null
+        },
+        {
+          "taskId": "training",
+          "action": "defer",
+          "before": {
+            "owner": "lead",
+            "days": 2,
+            "cost": 3000
+          },
+          "after": null
+        }
+      ],
+      "confirmed": [],
+      "approvedAt": "2026-10-11T16:17:40.010Z"
+    }
+  ],
+  "limits": "Prototype; no booking or client notification. Revision checksum is not a security signature."
+}

@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-11T16:52:35.783Z",
+  "scope": "Offline fixtures and invariant checks only. Provider behavior is separately tested with mocks. No live-model benchmark or real customer result is claimed.",
+  "liveModelEvaluated": false,
+  "total": 27,
+  "passed": 27,
+  "generatedCases": 150,
+  "results": [
+    {
+      "name": "Engineer unavailable",
+      "category": "business recovery",
+      "expected": "Recommendation passes hard business constraints",
+      "passed": true
+    },
+    {
+      "name": "Budget reduced",
+      "category": "business recovery",
+      "expected": "Recommendation passes hard business constraints",
+      "passed": true
+    },
+    {
+      "name": "Deadline pulled forward",
+      "category": "business recovery",
+      "expected": "Recommendation passes hard business constraints",
+      "passed": true
+    },
+    {
+      "name": "No feasible recovery",
+      "category": "business recovery",
+      "expected": "No feasible winner",
+      "passed": true
+    },
+    {
+      "name": "Backup quote remains provisional",
+      "category": "external assumptions",
+      "expected": "No verified claim before human confirmation",
+      "passed": true
+    },
+    {
+      "name": "Waiting versus recovery economics",
+      "category": "business value",
+      "expected": "₹18,000 modeled lateness avoided; ₹12,000 contribution improvement",
+      "passed": true
+    },
+    {
+      "name": "Ranking priority changes the option",
+      "category": "decision tradeoffs",
+      "expected": "Cash profile chooses cheaper recovery",
+      "passed": true
+    },
+    {
+      "name": "Prompt injection",
+      "category": "input policy",
+      "expected": "Return blocked; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Secret extraction",
+      "category": "input policy",
+      "expected": "Return blocked; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Scope destruction",
+      "category": "input policy",
+      "expected": "Return blocked; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "HTML injection",
+      "category": "input policy",
+      "expected": "Return blocked; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Ambiguous goal",
+      "category": "input policy",
+      "expected": "Return clarify; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Missing resource return day",
+      "category": "input policy",
+      "expected": "Return clarify; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Unknown resource",
+      "category": "input policy",
+      "expected": "Return clarify; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Percentage change",
+      "category": "input policy",
+      "expected": "Return clarify; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Multiple changes",
+      "category": "input policy",
+      "expected": "Return clarify; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Calendar date",
+      "category": "input policy",
+      "expected": "Return clarify; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Foreign currency",
+      "category": "input policy",
+      "expected": "Return clarify; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Negative input",
+      "category": "input policy",
+      "expected": "Return clarify; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Input budget exceeded",
+      "category": "input policy",
+      "expected": "Return clarify; do not execute recovery",
+      "passed": true
+    },
+    {
+      "name": "Stale review",
+      "category": "approval controls",
+      "expected": "Reject after plan changes",
+      "passed": true
+    },
+    {
+      "name": "No implicit approval",
+      "category": "approval controls",
+      "expected": "Explicit human approval required",
+      "passed": true
+    },
+    {
+      "name": "Unconfirmed external facts",
+      "category": "approval controls",
+      "expected": "No patch before capacity and quote confirmation",
+      "passed": true
+    },
+    {
+      "name": "Cycle rejection",
+      "category": "graph validity",
+      "expected": "Reject before scheduling",
+      "passed": true
+    },
+    {
+      "name": "Bounded search disclosure",
+      "category": "operational limits",
+      "expected": "Report truncated and do not claim global optimum",
+      "passed": true
+    },
+    {
+      "name": "Independent schedule verifier",
+      "category": "output integrity",
+      "expected": "Detect tampered cost output",
+      "passed": true
+    },
+    {
+      "name": "150 generated dependency graphs",
+      "category": "schedule invariants",
+      "expected": "All precedence, single-resource capacity and cost invariants pass",
+      "passed": true
+    }
+  ]
+}

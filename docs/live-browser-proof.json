@@ -1,0 +1,56 @@
+{
+  "scope": "Live local-rule replay against the same browser engine, with independent checks. Synthetic fixtures; not a live-model evaluation.",
+  "generatedAt": "2026-10-11T16:52:48.019Z",
+  "passed": 12,
+  "total": 12,
+  "results": [
+    {
+      "name": "Staffing recovery preserves required scope",
+      "passed": true
+    },
+    {
+      "name": "Staffing recovery preserves required scope — independent verification",
+      "passed": true
+    },
+    {
+      "name": "Budget cut respects hard budget",
+      "passed": true
+    },
+    {
+      "name": "Budget cut respects hard budget — independent verification",
+      "passed": true
+    },
+    {
+      "name": "Earlier deadline has a feasible patch",
+      "passed": true
+    },
+    {
+      "name": "Earlier deadline has a feasible patch — independent verification",
+      "passed": true
+    },
+    {
+      "name": "Impossible budget yields no recommendation",
+      "passed": true
+    },
+    {
+      "name": "Percentage change requires clarification",
+      "passed": true
+    },
+    {
+      "name": "Automatic approval request is blocked",
+      "passed": true
+    },
+    {
+      "name": "Application requires explicit approval",
+      "passed": true
+    },
+    {
+      "name": "Unconfirmed external quote blocks approval",
+      "passed": true
+    },
+    {
+      "name": "Stale baseline blocks application",
+      "passed": true
+    }
+  ]
+}

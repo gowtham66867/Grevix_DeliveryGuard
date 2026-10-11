@@ -1,0 +1,21 @@
+DELIVERYGUARD — DECISION BRIEF
+Northstar client portal
+Revision 09fa4551 / candidate-7a64b1f2
+
+Waiting: ₹63,000 delivery cost + ₹18,000 lateness exposure; ₹39,000 contribution.
+Recovery: ₹69,000 delivery cost; ₹51,000 contribution.
+Contribution difference versus waiting: ₹12,000.
+Buffers: ₹1,000 budget / 2 working days.
+Required scope preserved: yes.
+Deferred deliverables: none.
+
+CONFIRM BEFORE APPLYING
+Confirm backup engineer capacity and ₹20,000 quote
+
+STRESS CHECKS
+Delivery costs +10%: Cost exceeds budget by ₹5900.
+Every task takes 1 extra day: Delivery exceeds deadline by 4 working days.
+Every resource starts 2 days later: declared constraints pass
+All three shocks together: Cost exceeds budget by ₹5900. Delivery exceeds deadline by 6 working days.
+
+Synthetic what-if checks, not probabilities. No booking or client communication has occurred.
