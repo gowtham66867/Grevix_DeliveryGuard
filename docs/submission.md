@@ -20,7 +20,8 @@ Challenge Card 2 requires sharing the project, collecting genuine human feedback
 - [ ] Feedback screenshots and change explanation committed.
 - [ ] Phase 3 form completed.
 - [ ] Phase 4 form completed in its required window.
-- [ ] Judge-accessible demo and source URLs verified.
+- [x] Public demo verified on Cloud Run.
+- [ ] Judge-accessible source URL verified.
 - [ ] Any required video or form-specific attachment supplied.
 
 ## Submission copy
@@ -35,6 +36,6 @@ Challenge Card 2 requires sharing the project, collecting genuine human feedback
 
 **Technical distinction:** A bounded tool-orchestrated workflow separates optional language-model interpretation from deterministic scheduling and ranking. An independent verifier and stale-revision check protect the approval boundary.
 
-**Evidence:** 85 automated tests, 27 recorded evaluation cases, and 150 generated DAG scenarios in the evaluation harness. Browser-tested recovery, approval, undo, and export. No live-model benchmark or fabricated customer outcome is claimed.
+**Evidence:** 87 automated tests, 27 recorded evaluation cases, and 150 generated DAG scenarios in the evaluation harness. Browser-tested recovery, approval, undo, and export. No live-model benchmark or fabricated customer outcome is claimed.
 
 **Limitations:** Heuristic scheduling, synthetic demo data, declared external facts, browser-local state, and no multi-user or booking integration. Authentic human feedback remains pending. The assigned PulseGuard Edge baseline-sync challenge is not implemented in DeliveryGuard; full event compliance cannot be claimed.

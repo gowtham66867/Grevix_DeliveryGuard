@@ -4,6 +4,10 @@
 
 Built as an original prototype for consideration at GREVIX AfterCode. The initial idea was inspired by the planning problem described in Kartikey Gupta’s PlanPatch post; this implementation, business model, engine, interface, and harness are independent. The reference app was not copied.
 
+## Live demo
+
+[Public Cloud Run demo](https://deliveryguard-412542191970.asia-south1.run.app/) — no sign-in, synthetic data, local-rules interpretation. [Deployment record](docs/cloud-run.md).
+
 ## Try it
 
 Requires Node.js 22 or newer. No package installation is needed.
@@ -19,7 +23,7 @@ npm run check
 npm run build
 ```
 
-The recorded suite passes **85 tests**, **27 evaluation cases**, and **150 generated DAG scenarios** in the evaluation harness. Unit tests also run a separate batch of 150 generated graphs. Provider tests use mocks; no live-model benchmark or real customer savings are claimed.
+The recorded suite passes **87 tests**, **27 evaluation cases**, and **150 generated DAG scenarios** in the evaluation harness. Unit tests also run a separate batch of 150 generated graphs. Provider tests use mocks; no live-model benchmark or real customer savings are claimed.
 
 ## The business decision
 

@@ -1,0 +1,11 @@
+.git/
+.env
+.env.*
+node_modules/
+.openai/
+*.tar.gz
+docs/
+feedback/
+evals/
+tests/
+.DS_Store

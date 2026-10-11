@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T16:52:35.783Z",
+  "generatedAt": "2026-10-11T17:34:02.933Z",
   "scope": "Offline fixtures and invariant checks only. Provider behavior is separately tested with mocks. No live-model benchmark or real customer result is claimed.",
   "liveModelEvaluated": false,
   "total": 27,

@@ -68,3 +68,7 @@ Remaining browser checks and observed outcomes are recorded in [browser-qa.md](b
 `tests/assurance.test.mjs` verifies four stress scenarios, nonmutation, reproducibility, contribution reconciliation, scope-deferral confirmation, and evidence-preserving text export. Staffing recovery has only ₹1,000 budget buffer: 10% higher costs cause a ₹5,900 overrun. An extra day per task causes day-20 completion; every resource two days later still finishes at the day-16 limit.
 
 `tests/proof.test.mjs` verifies the browser's 12-check live proof and injects a broken agent to ensure failures are reported. The browser generates and exports the current run independently of the recorded evaluation JSON.
+
+## Cloud Run runtime contract
+
+`tests/cloud-run.test.mjs` verifies the all-interface binding under `K_SERVICE` while preserving loopback locally, and exact same-host HTTPS origin acceptance behind TLS termination. Foreign, suffix-spoofed and opaque origins are rejected. The container copies only runtime files and runs as the unprivileged Node user. Upload exclusions omit environment secrets, source Git metadata and local evidence.
