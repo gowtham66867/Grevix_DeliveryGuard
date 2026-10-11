@@ -55,3 +55,6 @@ Build decisions: https://github.com/gowtham66867/Grevix_DeliveryGuard/blob/main/
 ## What changed before Final Forge
 
 Added a judge guide that maps each claim to source and tests, a one-command submission-evidence verifier, a break-even analysis for backup spend, and a proposed pilot with explicit acceptance and stop criteria. Corrected stale documentation counts and Cloud Run wording. These are builder-directed improvements, not improvements attributed to genuine external human feedback. No new live-AI, customer or card-completion claim is introduced.
+
+
+Follow-up on 12 October: the assigned baseline recovery behavior has now been implemented in PulseGuard Edge, with 55 passing tests, type checking, lint, a production build and browser evidence. See [dated implementation evidence](https://github.com/gowtham66867/pulseguard-edge-demo/blob/2a0136b/docs/CHALLENGE_01_EVIDENCE.md). This was done after the build window and in the original project; it does not establish organizer acceptance of the DeliveryGuard switch or late work.

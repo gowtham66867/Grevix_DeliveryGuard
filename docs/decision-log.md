@@ -25,3 +25,7 @@ After the owner's request to keep improving before submission, added a claim-to-
 ## Final Forge form
 
 At approximately 00:02 IST on 12 October, the final form required only a public repository URL and specified a `Grevix_` name prefix. Renamed the public repository to `Grevix_DeliveryGuard`, updated repository references, and submitted its URL. Unstop subsequently displayed the saved Team submission and its exact repository link. Private receipt files remain outside the public repository. This confirms form completion, not challenge compliance.
+
+## Post-window Card 1 follow-up
+
+The owner requested improvements to both cards after Final Forge submission. Implemented the assigned missed-baseline recovery in the original PulseGuard Edge code, published commit `2a0136b`, and linked its dated evidence here. The submitted DeliveryGuard project remains separate. Card 2 awaits a genuine reviewer observation; review tasks and evidence templates are ready, and no message has been sent to anyone.

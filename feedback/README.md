@@ -17,3 +17,6 @@ Add the judge-accessible demo URL before sharing. This draft has not been sent.
 ## Record after a genuine response
 
 Write a concise note linking the actual evidence: who tried the app, what they told us, what changed because of it, and how the change was verified. Include the implementation commit. Keep pending items marked pending; do not label internal QA as customer feedback.
+
+
+A [two-minute reviewer task](reviewer-task.md) and [empty capture template](review-template.json) are prepared. They have not been sent or populated with a real response.

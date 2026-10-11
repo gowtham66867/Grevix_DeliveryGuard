@@ -88,3 +88,6 @@ Start with the [judge guide](docs/judge-guide.md), then inspect the [submission 
 - Challenge Card 1 was found in the organizer’s 11 October email and is assigned specifically to PulseGuard Edge: recover missed patient-baseline updates and recalculate risk while preserving quality and persistence checks. DeliveryGuard does not implement that assignment; organizer acceptance of a new project is unverified.
 
 MIT licensed. See [LICENSE](LICENSE).
+
+
+Follow-up on 12 October: the assigned baseline recovery behavior has now been implemented in PulseGuard Edge, with 55 passing tests, type checking, lint, a production build and browser evidence. See [dated implementation evidence](https://github.com/gowtham66867/pulseguard-edge-demo/blob/2a0136b/docs/CHALLENGE_01_EVIDENCE.md). This was done after the build window and in the original project; it does not establish organizer acceptance of the DeliveryGuard switch or late work.

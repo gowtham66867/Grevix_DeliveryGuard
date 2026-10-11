@@ -39,3 +39,6 @@ Challenge Card 2 requires sharing the project, collecting genuine human feedback
 **Evidence:** 87 automated tests, 27 recorded evaluation cases, and 150 generated DAG scenarios in the evaluation harness. Browser-tested recovery, approval, undo, and export. No live-model benchmark or fabricated customer outcome is claimed.
 
 **Limitations:** Heuristic scheduling, synthetic demo data, declared external facts, browser-local state, and no multi-user or booking integration. Authentic human feedback remains pending. The assigned PulseGuard Edge baseline-sync challenge is not implemented in DeliveryGuard; full event compliance cannot be claimed.
+
+
+Follow-up on 12 October: the assigned baseline recovery behavior has now been implemented in PulseGuard Edge, with 55 passing tests, type checking, lint, a production build and browser evidence. See [dated implementation evidence](https://github.com/gowtham66867/pulseguard-edge-demo/blob/2a0136b/docs/CHALLENGE_01_EVIDENCE.md). This was done after the build window and in the original project; it does not establish organizer acceptance of the DeliveryGuard switch or late work.

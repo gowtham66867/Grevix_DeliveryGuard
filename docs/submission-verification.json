@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T18:33:05.664Z",
+  "generatedAt": "2026-10-11T18:45:28.759Z",
   "scope": "Fresh local engineering verification plus previously recorded Cloud Run browser evidence. No live-model benchmark or customer validation.",
   "unitTests": {
     "passed": 87,
@@ -71,14 +71,14 @@
   },
   "releaseVerdict": "Engineering checks pass. Event compliance remains incomplete.",
   "unresolved": [
-    "Assigned PulseGuard Edge Card 1 not implemented in DeliveryGuard; organizer acceptance of the project switch is unverified.",
+    "Card 1 implemented in PulseGuard Edge after the build window; DeliveryGuard project switch and late-work acceptance remain unverified.",
     "Genuine human feedback and corresponding Card 2 improvement evidence pending."
   ],
   "artifacts": [
     {
       "path": "docs/submission-answers.md",
-      "bytes": 5708,
-      "sha256": "c71fa83cda37630d37a88bd3613a2838b4df7e0d7a3a1944e49c0fe44dbb9dce"
+      "bytes": 6190,
+      "sha256": "d233ae023151d73114334ee61540113af19fca2322de55572ffb755cf359b0fe"
     },
     {
       "path": "docs/business-case.md",
@@ -107,13 +107,13 @@
     },
     {
       "path": "docs/decision-log.md",
-      "bytes": 3210,
-      "sha256": "aeecac4a94acb8c82372e3ad63bd6cba2865fceb76de50284d17f93b6dbcb043"
+      "bytes": 3660,
+      "sha256": "149a3ae8f29804717d735d095106f03d163748abaf34d26e36e067daeff1f0ca"
     },
     {
       "path": "docs/judge-guide.md",
-      "bytes": 5003,
-      "sha256": "6330b54fdd968c5002e76582defcb8ade48bf65fe3869db9d66b1aa5dd594218"
+      "bytes": 5485,
+      "sha256": "02a2a5af785a32393fa1747211307a268c4dac0650a6cf581599d93969174be7"
     },
     {
       "path": "docs/live-browser-proof.json",
@@ -123,12 +123,12 @@
     {
       "path": "evals/report.json",
       "bytes": 4968,
-      "sha256": "8463cd58882ccbc4c01d21f42409642d9ede07cf184c6de43e8bad7b08f29892"
+      "sha256": "44523bec0af9a62fd23ff7b6cfa4d6caec53b8aaae39e8b219f2ba53d10add95"
     },
     {
       "path": "feedback/README.md",
-      "bytes": 1534,
-      "sha256": "c1b245668cda69f6726f150a8c7b55f8ef4cf166aa1e843a75eb39f58dff6d27"
+      "bytes": 1707,
+      "sha256": "ee6e2e3cc54b070b5683e113c135d3cc681e2f6f0990516548967eb5f6fe3ea8"
     }
   ],
   "integrityNote": "SHA-256 values let reviewers compare these exact files. This is not a signed attestation or an immutable audit log."

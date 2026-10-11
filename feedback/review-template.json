@@ -1,0 +1,16 @@
+{
+  "status": "awaiting_authentic_feedback",
+  "project": "DeliveryGuard",
+  "demoUrl": "https://deliveryguard-412542191970.asia-south1.run.app/",
+  "reviewer": null,
+  "reviewedAt": null,
+  "versionReviewed": null,
+  "exactObservation": null,
+  "requestScreenshot": null,
+  "responseScreenshot": null,
+  "publicationConsent": null,
+  "implementedChange": null,
+  "implementationCommit": null,
+  "verification": null,
+  "timingNote": "Any new work is after the 24-hour build window; organizer acceptance is unconfirmed."
+}
